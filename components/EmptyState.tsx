@@ -3,7 +3,7 @@ import type { TaskFilterType } from "@/types/task";
 const COPY: Record<TaskFilterType, { icon: string; title: string; subtitle: string }> = {
   all: { icon: "📝", title: "Nenhuma tarefa ainda", subtitle: "Adicione sua primeira tarefa para começar." },
   pending: { icon: "✅", title: "Tudo em dia!", subtitle: "Não há tarefas pendentes no momento." },
-  completed: { icon: "🚀", title: "Nada concluído ainda", subtitle: "Marque uma tarefa como feita para vê-la aqui." },
+  completed: { icon: "", title: "Nada concluído ainda", subtitle: "Marque uma tarefa como feita para vê-la aqui." },
 };
 
 export function EmptyState({ filter }: { filter: TaskFilterType }) {
